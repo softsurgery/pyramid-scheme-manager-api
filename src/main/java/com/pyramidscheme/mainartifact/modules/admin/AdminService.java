@@ -1,9 +1,10 @@
-package com.pyramidscheme.mainartifact.admin;
+package com.pyramidscheme.mainartifact.modules.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AdminService {
@@ -18,8 +19,8 @@ public class AdminService {
         return adminRepository.findById(id).orElse(null);
     }
 
-    public AdminModel saveAdmin(AdminModel product) {
-        return adminRepository.save(product);
+    public AdminModel saveAdmin(AdminModel admin) {
+        return adminRepository.save(admin);
     }
 
     public AdminModel updateAdmin(Long id, AdminModel adminModelDetails) {

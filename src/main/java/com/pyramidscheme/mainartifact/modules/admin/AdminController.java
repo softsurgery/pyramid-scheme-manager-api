@@ -1,4 +1,4 @@
-package com.pyramidscheme.mainartifact.admin;
+package com.pyramidscheme.mainartifact.modules.admin;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
